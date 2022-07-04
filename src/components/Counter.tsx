@@ -22,6 +22,7 @@ const Counter: FC<CounterProps> = ({ counter, index }) => {
   }, [isForth, counter.id, dispatch, increment]);
   return (
     <div className='counter'>
+      <div>{`Counter №:${index + 1}`}</div>
       <div>{`Score:${counter.score}`}</div>
       {!isForth &&
         <div>
